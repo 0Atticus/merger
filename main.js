@@ -5,15 +5,20 @@ var c1;
 var c2 = 0;
 var max = 2;
 
+
+function checkNum(x) {
+    return (Math.log(x) / Math.log(2)) % 1 === 0;
+}
+
 async function swap() {
     let combined = parseInt(c1.getAttribute("val")) + parseInt(c2.getAttribute("val"));
     c2.setAttribute("val", (String)(combined));
     c2.innerHTML = (String)(combined);
     let new_num = Math.floor(Math.random() * max) + 1;
-    if (new_num % 2 == 0 || new_num == 1) {
+    if (new_num == 1 || checkNum(new_num) == true) {
         null;
     } else {
-        ++new_num;
+        new_num = 1;
     }
     c1.setAttribute("val", (String)(new_num));
     c1.innerHTML = (String)(new_num);
