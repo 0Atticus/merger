@@ -1,0 +1,30 @@
+.col {
+  display: inline-block;
+  margin: auto; }
+
+p {
+  padding: 12px;
+  border: solid 2px black; }
+
+.c1 {
+  background-color: goldenrod; }
+
+@keyframes swap_left {
+  to {
+    transform: translateX(-100%); } }
+@keyframes swap_down {
+  to {
+    transform: translateY(100%); } }
+@keyframes swap_up {
+  to {
+    transform: translateY(-100%); } }
+@keyframes swap_right {
+  to {
+    transform: translateX(100%); } }
+@keyframes spawn {
+  50% {
+    background-color: darkgreen; }
+  100% {
+    background-color: white; } }
+
+/*# sourceMappingURL=style.css.map */
