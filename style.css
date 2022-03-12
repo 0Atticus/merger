@@ -4,7 +4,9 @@
 
 p {
   padding: 12px;
-  border: solid 2px black; }
+  border: solid 2px black;
+  padding-right: 20px;
+  padding-left: 20px; }
 
 .c1 {
   background-color: goldenrod; }
@@ -26,5 +28,31 @@ p {
     background-color: darkgreen; }
   100% {
     background-color: white; } }
+#game {
+  margin-left: 40%; }
+
+p[val="1"] {
+  background-image: url("m1.jpeg");
+  background-size: cover; }
+
+p[val="2"] {
+  background-image: url("m2.jpeg");
+  background-size: cover; }
+
+p[val="4"] {
+  background-image: url("m3.jpeg");
+  background-size: cover; }
+
+p[val="8"] {
+  background-image: url("m4.jpeg");
+  background-size: cover; }
+
+p[val="16"] {
+  background-image: url("m5.jpeg");
+  background-size: cover; }
+
+p[val="32"] {
+  background-image: url("m6.jpeg");
+  background-size: cover; }
 
 /*# sourceMappingURL=style.css.map */

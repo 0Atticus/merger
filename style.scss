@@ -1,3 +1,4 @@
+
 .col {
     display: inline-block;
     margin: auto;
@@ -6,6 +7,8 @@
 p {
     padding: 12px;
     border: solid 2px black;
+    padding-right: 20px;
+    padding-left: 20px;
 }
 
 .c1 {
@@ -41,4 +44,21 @@ p {
     100% {
         background-color: white;
     }
+}
+
+#game {
+    margin-left: 40%;
+}
+
+$temp: 1;
+
+@for $i from 1 through 6 {
+
+    p[val="#{$temp}"] {
+        background-image: url("m#{$i}.jpeg");
+        background-size: cover;
+    }
+
+
+    $temp: $temp * 2;
 }
